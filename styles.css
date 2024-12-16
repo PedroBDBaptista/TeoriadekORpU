@@ -1,0 +1,30 @@
+/* Set global styles to remove default margins and padding */
+body {
+    margin: 0;
+    padding: 0; 
+    height: 100vh;
+    background-color: #1b1a1a;
+}
+
+.content {
+    text-align: center;
+    padding: 50px; /* Adds some padding to push down the image */
+    background-color: #1b1a1a; /* Example background for contrast */
+}
+
+/* Style the image */
+.scrollable-image {
+    position: relative;
+    top:0;
+    display: block;
+    max-width: 80%; /* Set maximum width */
+    margin-left: 10%; /* 10% margin from the left */
+    margin-right: 10%; /* 10% margin from the right */
+    background-size: cover; /* Ensures full screen height */
+    z-index: -1; /* Moves the image behind the content */
+   
+}
+
+h1, p {
+    color: #ffffff; /* New text color */
+}
