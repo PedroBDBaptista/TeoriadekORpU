@@ -33,15 +33,15 @@ body {
 
 /* Style the image */
 .centered-image {
-    max-width: 80vw; /* Limits width to 80% of the viewport */
+    max-width: 95vw; /* Limits width to 80% of the viewport */
     height: auto; /* Maintains aspect ratio */
     display: block; /* Removes extra inline spacing */
     margin: 0; /* Center the image horizontally */
 }
 
 /* Text Styling */
-.content h1 {
-    color: #ffffff; /* White text color */
+.content h2 {
+    color: #bdbcbc; /* White text color */
     font-size: 2rem; /* Default font size */
     margin: 0;
 }
@@ -58,13 +58,13 @@ body {
         max-width: 90%; /* Allows the image to be slightly larger on smaller screens */
     }
 
-    .content h1 {
-        font-size: 1.5rem; /* Reduces text size for better readability */
+    .content h2 {
+        font-size: 1.0rem; /* Reduces text size for better readability */
     }
 }
 /* Adjust image position on PC */
-@media screen and (min-width: 769px) { /* Only apply on PC screens */
+@media screen and (min-width: 1000px) { /* Only apply on PC screens */
     .centered-image {
-        margin-top: 500px; /* Adjust this value to control how far down it appears */
+        margin-top: 600px; /* Adjust this value to control how far down it appears */
     }
 }
