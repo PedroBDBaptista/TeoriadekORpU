@@ -48,7 +48,7 @@ body {
 
 
 /* Mobile Optimization */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     body {
         background-size: cover; /* Ensures full screen coverage */
         overflow-y:hidden; /*Prevents scrolling on phone*/
@@ -60,6 +60,8 @@ body {
 
     .content h2 {
         font-size: 1.0rem; /* Reduces text size for better readability */
+        color: #bdbcbc; /* White text color */
+        margin: 0;
     }
 }
 /* Adjust image position on PC */
