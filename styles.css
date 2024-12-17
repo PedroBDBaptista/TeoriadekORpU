@@ -33,9 +33,10 @@ body {
 
 /* Style the image */
 .centered-image {
-    max-width: 80%; /* Limits the teaser image width */
+    max-width: 80vw; /* Limits width to 80% of the viewport */
     height: auto; /* Maintains aspect ratio */
-    margin-bottom: 20px; /* Adds spacing below the image */
+    display: block; /* Removes extra inline spacing */
+    margin: 0; /* Center the image horizontally */
 }
 
 /* Text Styling */
