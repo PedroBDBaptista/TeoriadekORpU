@@ -1,30 +1,67 @@
 /* Set global styles to remove default margins and padding */
-body {
+body, html {
     margin: 0;
-    padding: 0; 
-    height: 100vh;
-    background-color: #1b1a1a;
+    padding: 0;
+    height: 100%; /* Ensures the body takes full height */
+    box-sizing: border-box;
+    overflow-y: auto; /* Prevent scrolling */
+}
+
+/* Background Image */
+body {
+    background-image: url('background.jpeg'); /* Replace with your background image */
+    background-size: cover; /* Ensures it covers the viewport, cropping if needed */
+    background-position: center; /* Centers the visible part of the background */
+    background-repeat: no-repeat; /* Prevents repeating */
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
     text-align: center;
-    padding: 50px; /* Adds some padding to push down the image */
-    background-color: #1b1a1a; /* Example background for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 /* Style the image */
-.scrollable-image {
-    position: relative;
-    top:0;
-    display: block;
-    max-width: 80%; /* Set maximum width */
-    margin-left: 10%; /* 10% margin from the left */
-    margin-right: 10%; /* 10% margin from the right */
-    background-size: cover; /* Ensures full screen height */
-    z-index: -1; /* Moves the image behind the content */
-   
+.centered-image {
+    max-width: 80%; /* Limits the teaser image width */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 20px; /* Adds spacing below the image */
 }
 
-h1, p {
-    color: #ffffff; /* New text color */
+/* Text Styling */
+.content h1 {
+    color: #ffffff; /* White text color */
+    font-size: 2rem; /* Default font size */
+    margin: 0;
+}
+
+
+/* Mobile Optimization */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: cover; /* Ensures full screen coverage */
+        overflow-y:hidden; /*Prevents scrolling on phone*/
+    }
+
+    .centered-image {
+        max-width: 90%; /* Allows the image to be slightly larger on smaller screens */
+    }
+
+    .content h1 {
+        font-size: 1.5rem; /* Reduces text size for better readability */
+    }
+}
+/* Adjust image position on PC */
+@media screen and (min-width: 769px) { /* Only apply on PC screens */
+    .centered-image {
+        margin-top: 500px; /* Adjust this value to control how far down it appears */
+    }
 }
