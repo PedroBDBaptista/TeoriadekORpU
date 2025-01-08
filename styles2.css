@@ -1,0 +1,67 @@
+/* Global Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
+}
+
+
+.image-container {
+    height:auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*min-height: 100vh; 
+    background-repeat: no-repeat;
+    background-position: center top; /* Align to top center */
+    /*animation: fade-images 50s infinite;
+    transition: background-image 1s ease-in-out;
+    position: relative;*/
+}
+
+#animated-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    animation: fade-images 25s infinite;
+    transition: content 2s ease-in-out;
+}
+
+/* Keyframes for Image Cycling */
+@keyframes fade-images {
+    0% {content: url('OliPhotoshop.png');}
+    20% {content: url('OliPhotoshop.png');}
+    25% {content: url('PedroPhotoshop1.png');}
+    45% {content: url('PedroPhotoshop1.png');}
+    50% {content: url('RaquelePhotoshop1.png');}
+    70% {content: url('RaquelePhotoshop1.png');}
+    75% {content: url('SaraPhotoshop.png');}
+    95% {content: url('SaraPhotoshop.png');}
+    100% {content: url('MaranhaPhotshop.png');}
+}
+
+/* PC-Specific Behavior */
+@media screen and (min-width: 1000px) {
+    #animated_image{
+        width: 100%;
+    }
+    body {
+        overflow-y: auto; /* Enable vertical scrolling on PC */
+        height: auto;
+    }
+}
+
+/* Mobile Optimization */
+@media screen and (max-width: 999px) {
+    #animated_image {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    body {
+        overflow-y: hidden; /* Disable vertical scrolling on mobile */
+    }
+}
