@@ -26,20 +26,21 @@ body, html {
     display: block;
     width: 100%;
     height: auto;
-    animation: fade-images 25s infinite;
+    animation: fade-images 30s infinite;
     transition: content 2s ease-in-out;
 }
 
 /* Keyframes for Image Cycling */
 @keyframes fade-images {
     0% {content: url('OliPhotoshop.png');}
-    20% {content: url('OliPhotoshop.png');}
-    25% {content: url('PedroPhotoshop1.png');}
-    45% {content: url('PedroPhotoshop1.png');}
-    50% {content: url('RaquelePhotoshop1.png');}
-    70% {content: url('RaquelePhotoshop1.png');}
-    75% {content: url('SaraPhotoshop.png');}
-    95% {content: url('SaraPhotoshop.png');}
+    15% {content: url('OliPhotoshop.png');}
+    20% {content: url('PedroPhotoshop1.png');}
+    35% {content: url('PedroPhotoshop1.png');}
+    40% {content: url('RaquelePhotoshop1.png');}
+    55% {content: url('RaquelePhotoshop1.png');}
+    60% {content: url('SaraPhotoshop2.png');}
+    75% {content: url('SaraPhotoshop2.png');}
+    80% {content: url('MaranhaPhotshop.png');}
     100% {content: url('MaranhaPhotshop.png');}
 }
 
