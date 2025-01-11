@@ -55,6 +55,7 @@ body, html {
     padding: 20px; /* Add some padding around the text */
     box-sizing: border-box; /* Include padding in width calculation */
     text-align: center; /* Center the text */
+    color: white;
     text-shadow: 1px 1px 2px #b33232; /* Darker text shadow */
     font-family: "Anton", serif; /* Example font stack */
 }
@@ -95,7 +96,7 @@ body, html {
         padding: 20px; /* Add some padding around the text */
         box-sizing: border-box; /* Include padding in width calculation */
         text-align: center; /* Center the text */
-        height: 15vh;
+        height: 12vh;
         color: white;
         font-size: 0.5em;
         line-height: 0.2;
@@ -105,7 +106,7 @@ body, html {
 
     .text-block-down {
         text-align: left;
-        height: 15vh; /* Extend to bottom on mobile */
+        height: 12vh; /* Extend to bottom on mobile */
         display: flex; /* Use flexbox for vertical alignment */
         flex-direction: column;
         justify-content: center; /* Vertically center content */
