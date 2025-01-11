@@ -72,7 +72,7 @@ body, html {
     }
     .text-block-down {
         text-align: left;
-        min-height: calc(100vh - 70vh); /* Extend to bottom on mobile */
+        min-height: 15); /* Extend to bottom on mobile */
         display: flex; /* Use flexbox for vertical alignment */
         flex-direction: column;
         justify-content: center; /* Vertically center content */
@@ -96,9 +96,9 @@ body, html {
         padding: 20px; /* Add some padding around the text */
         box-sizing: border-box; /* Include padding in width calculation */
         text-align: center; /* Center the text */
-        min-height: 30vh;
+        min-height: 15vh;
         color: white;
-        font-size: 3em;
+        font-size: 0.5em;
         line-height: 0.2;
         text-shadow: 1px 1px 2px #b33232; /* Darker text shadow */
         font-family: "Anton", serif; /* Example font stack */
