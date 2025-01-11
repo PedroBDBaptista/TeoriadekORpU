@@ -8,6 +8,11 @@ body, html {
     min-height: 100%;
 }
 
+.anton-regular {
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 .image-container {
     height:auto;
@@ -44,6 +49,18 @@ body, html {
     100% {content: url('MaranhaPhotshop.png');}
 }
 
+.text-block-down {
+    width: 100%; /* Make the block full width */
+    background-color: #30302f; /* Light gray background color (adjust as needed) */
+    padding: 20px; /* Add some padding around the text */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center; /* Center the text */
+    color: white;
+    font-size: 3em;
+    line-height: 0.2;
+    text-shadow: 1px 1px 2px #b33232; /* Darker text shadow */
+    font-family: "Anton", serif; /* Example font stack */
+}
 /* PC-Specific Behavior */
 @media screen and (min-width: 1000px) {
     #animated_image{
@@ -52,6 +69,13 @@ body, html {
     body {
         overflow-y: auto; /* Enable vertical scrolling on PC */
         height: auto;
+    }
+    .text-block-down {
+        text-align: left;
+        min-height: calc(100vh - 70vh); /* Extend to bottom on mobile */
+        display: flex; /* Use flexbox for vertical alignment */
+        flex-direction: column;
+        justify-content: center; /* Vertically center content */
     }
 }
 
@@ -64,5 +88,19 @@ body, html {
     }
     body {
         overflow-y: hidden; /* Disable vertical scrolling on mobile */
+    }
+
+    .text-block-up {
+        width: 100%; /* Make the block full width */
+        background-color: #30302f; /* Light gray background color (adjust as needed) */
+        padding: 20px; /* Add some padding around the text */
+        box-sizing: border-box; /* Include padding in width calculation */
+        text-align: center; /* Center the text */
+        min-height: 30vh;
+        color: white;
+        font-size: 3em;
+        line-height: 0.2;
+        text-shadow: 1px 1px 2px #b33232; /* Darker text shadow */
+        font-family: "Anton", serif; /* Example font stack */
     }
 }
