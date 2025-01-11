@@ -55,9 +55,6 @@ body, html {
     padding: 20px; /* Add some padding around the text */
     box-sizing: border-box; /* Include padding in width calculation */
     text-align: center; /* Center the text */
-    color: white;
-    font-size: 3em;
-    line-height: 0.2;
     text-shadow: 1px 1px 2px #b33232; /* Darker text shadow */
     font-family: "Anton", serif; /* Example font stack */
 }
@@ -72,10 +69,12 @@ body, html {
     }
     .text-block-down {
         text-align: left;
-        min-height: 15); /* Extend to bottom on mobile */
+        min-height: 30vh; /* Extend to bottom on mobile */
         display: flex; /* Use flexbox for vertical alignment */
         flex-direction: column;
         justify-content: center; /* Vertically center content */
+        font-size: 3em;
+        line-height: 0.2;
     }
 }
 
@@ -102,5 +101,15 @@ body, html {
         line-height: 0.2;
         text-shadow: 1px 1px 2px #b33232; /* Darker text shadow */
         font-family: "Anton", serif; /* Example font stack */
+    }
+
+    .text-block-down {
+        text-align: left;
+        min-height: 15vh; /* Extend to bottom on mobile */
+        display: flex; /* Use flexbox for vertical alignment */
+        flex-direction: column;
+        justify-content: center; /* Vertically center content */
+        font-size: 3em;
+        line-height: 0.2;
     }
 }
