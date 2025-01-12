@@ -92,7 +92,7 @@ body, html {
         position: absolute; /* Make it positioned relative to the viewport */
         top: 50%; /* Center vertically */
         left: 50%; /* Center horizontally */
-        transform: translate(-50%, -50%); /* Adjust positioning for centering */
+        /*transform: translate(-50%, -50%); /* Adjust positioning for centering */
     }
     body {
         overflow-y: hidden; /* Disable vertical scrolling on mobile */
