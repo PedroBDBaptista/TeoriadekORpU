@@ -63,16 +63,6 @@ body {
     100% {content: url('MaranhaPhotshop.png');}
 }
 
-.text-block-down {
-    width: 100%; /* Make the block full width */
-    background-color: #30302f; /* Light gray background color (adjust as needed) */
-    padding: 20px; /* Add some padding around the text */
-    box-sizing: border-box; /* Include padding in width calculation */
-    text-align: center; /* Center the text */
-    color: white;
-    text-shadow: 1px 1px 2px #b33232; /* Darker text shadow */
-    font-family: "Anton", serif; /* Example font stack */
-}
 /* PC-Specific Behavior */
 @media screen and (min-width: 1000px) {
     #animated_image{
@@ -82,15 +72,7 @@ body {
         overflow-y: auto; /* Enable vertical scrolling on PC */
         height: auto;
     }
-    .text-block-down {
-        text-align: left;
-        min-height: 30vh; /* Extend to bottom on mobile */
-        display: flex; /* Use flexbox for vertical alignment */
-        flex-direction: column;
-        justify-content: center; /* Vertically center content */
-        font-size: 3em;
-        line-height: 0.2;
-    }
+
 }
 
 /* Mobile Optimization */
@@ -107,13 +89,5 @@ body {
     .image-container{
         align-items:center;
     }
-    .text-block-down {
-        text-align: left;
-        height: 12vh; /* Extend to bottom on mobile */
-        display: flex; /* Use flexbox for vertical alignment */
-        flex-direction: column;
-        justify-content: center; /* Vertically center content */
-        font-size: 0.5em;
-        line-height: 0.2;
-    }
+
 }
